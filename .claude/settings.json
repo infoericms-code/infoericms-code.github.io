@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "G=$(command -v git || echo '/c/Program Files/Git/cmd/git.exe'); cd \"${CLAUDE_PROJECT_DIR:-.}\" || exit 0; if [ -n \"$(\"$G\" status --porcelain)\" ]; then \"$G\" add -A && \"$G\" commit -q -m \"Cambios automáticos del $(date '+%d/%m/%Y %H:%M')\" && echo '{\"systemMessage\":\"Commit automático hecho\"}'; fi",
+            "timeout": 30,
+            "statusMessage": "Guardando commit automático..."
+          }
+        ]
+      }
+    ]
+  }
+}

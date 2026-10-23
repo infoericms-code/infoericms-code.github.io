@@ -1,0 +1,5 @@
+# Carpeta temporal que crea Playwright al probar la web
+.playwright-mcp/
+
+# Ajustes personales de Claude Code (no se comparten)
+.claude/settings.local.json
