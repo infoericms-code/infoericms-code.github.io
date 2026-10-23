@@ -21,7 +21,12 @@ Página web personal en **un único archivo**: `index.html` (HTML + CSS + JS inl
 - **Qué puedo hacer por ti**: servicios que ofrece Eric (icono SVG, título y descripción en bloques con borde). Solo servicios reales.
 - **Mis trabajos**: tarjetas fijas en HTML con los trabajos hechos (etiqueta tipo · año, título, descripción, tecnologías y botón «Ver web» opcional), el más reciente arriba. La web sirve para conseguir clientes: todo lo que aparece tiene que ser real.
 - **Hablemos**: frase de invitación y dos botones de contacto con los datos reales de Eric: correo (`mailto:`) y WhatsApp (`wa.me` con un mensaje ya escrito). Debajo, un formulario de contacto que envía los mensajes a través de Web3Forms (servicio externo).
+- **Pie**: año y enlace a «Aviso legal y privacidad». El aviso del formulario también enlaza ahí.
 - JavaScript: pone el año actual en el pie y envía el formulario con `fetch`.
+
+## `privacidad.html`
+
+Aviso legal y política de privacidad (RGPD y LSSI) en una página aparte con el mismo estilo. Responsable: Eric Martínez Soler, Barcelona y correo. El NIF y el domicilio están comentados (`EDITA AQUÍ`) hasta que Eric sea autónomo. Enumera los servicios externos (Web3Forms, Gmail, WhatsApp, GitHub Pages, Google Fonts) y deja claro que la web no usa cookies.
 
 ## Reglas
 

@@ -441,6 +441,19 @@
       font-size: .875rem;
       padding: 16px 0 40px;
     }
+    /* Enlaces de texto (pie y aviso del formulario) */
+    footer a,
+    .form-note a {
+      color: inherit;
+      text-underline-offset: 3px;
+    }
+    footer a:hover,
+    .form-note a:hover { color: var(--blue); }
+    footer a:focus-visible,
+    .form-note a:focus-visible {
+      outline: 2px solid var(--blue);
+      outline-offset: 3px;
+    }
 
     @media (max-width: 480px) {
       header { padding-top: 32px; }
@@ -606,8 +619,7 @@
         <button type="submit" class="form-btn">Enviar mensaje</button>
         <div>
           <p class="form-status" id="form-status" role="status"></p>
-          <!-- EDITA AQUÍ: cuando tengas una política de privacidad, enlázala en este aviso -->
-          <p class="form-note">Solo usaré tus datos para responderte. El mensaje se envía a través de Web3Forms.</p>
+          <p class="form-note">Solo usaré tus datos para responderte. El mensaje se envía a través de Web3Forms. Más información en <a href="privacidad.html">privacidad</a>.</p>
         </div>
       </form>
     </section>
@@ -615,7 +627,7 @@
 
   <footer>
     <!-- EDITA AQUÍ: tu nombre en el pie -->
-    © <span id="year"></span> Eric Martínez
+    © <span id="year"></span> Eric Martínez · <a href="privacidad.html">Aviso legal y privacidad</a>
   </footer>
 
   <script>
