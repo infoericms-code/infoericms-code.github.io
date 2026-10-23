@@ -23,9 +23,12 @@
   <meta name="twitter:card" content="summary_large_image">
   <!-- Dirección oficial de la página para Google -->
   <link rel="canonical" href="https://infoericms-code.github.io/">
-  <!-- Icono de la pestaña (16, 32 y 48 px) y de la pantalla de inicio del iPhone (180 px) -->
-  <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Icono de la pestaña (PNG de 32 y 48 px, más .ico para navegadores antiguos) y del iPhone (180 px).
+       El "?v=2" obliga a los navegadores a descargarlo de nuevo: súbelo (v=3…) si cambias el icono. -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=2">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png?v=2">
+  <link rel="icon" href="favicon.ico?v=2" sizes="16x16">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">

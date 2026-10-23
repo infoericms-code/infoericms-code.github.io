@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Qué es
 
-Página web personal en **un único archivo**: `index.html` (HTML + CSS + JS inline). No hay build, dependencias, tests ni linter. La única dependencia externa es Poppins desde Google Fonts. Junto a él están `vista-previa.png` (1200 × 630 px, la imagen que sale al compartir el enlace), `favicon.ico` (icono de la pestaña: «EM» negro sobre azul, como el avatar) y `apple-touch-icon.png` (el mismo icono a 180 px para iPhone). Ambas páginas los enlazan en el `<head>`. Para verla en local, abrir `index.html` directamente en Chrome/Edge.
+Página web personal en **un único archivo**: `index.html` (HTML + CSS + JS inline). No hay build, dependencias, tests ni linter. La única dependencia externa es Poppins desde Google Fonts. Junto a él están `vista-previa.png` (1200 × 630 px, la imagen que sale al compartir el enlace), el icono de la pestaña («EM» negro sobre azul, como el avatar) en `favicon-32.png`, `favicon-48.png` y `favicon.ico`, y `apple-touch-icon.png` (180 px, iPhone). Ambas páginas los enlazan en el `<head>` con `?v=2`: si se cambia el icono, subir ese número en las dos para que los navegadores no usen el antiguo. Chrome no mostraba en la pestaña el `.ico` (lleva PNG dentro), por eso los PNG van primero. Para verla en local, abrir `index.html` directamente en Chrome/Edge.
 
 ## Publicación
 
