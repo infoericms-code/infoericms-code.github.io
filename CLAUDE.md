@@ -16,7 +16,7 @@ Página web personal en **un único archivo**: `index.html` (HTML + CSS + JS inl
 ## Estructura de `index.html`
 
 - **`<head>`**: título y `meta description` para Google, y etiquetas Open Graph para la vista previa al compartir. `og:url`, `og:image` y `canonical` apuntan a la dirección publicada. Si se cambia la descripción, cambiar también `og:description`.
-- **Cabecera**: avatar cuadrado (iniciales, sustituible por `<img>`), nombre, profesión y botón a LinkedIn (azul de LinkedIn con texto blanco, por contraste).
+- **Cabecera**: avatar cuadrado (iniciales, sustituible por `<img>`), nombre y profesión. El botón de LinkedIn está quitado (cuenta de Eric restringida); los estilos `.social-btn` siguen en el CSS por si se recupera.
 - **Sobre mí**: párrafos y chips de habilidades/intereses.
 - **Qué puedo hacer por ti**: servicios que ofrece Eric (icono SVG, título y descripción en bloques con borde). Solo servicios reales.
 - **Mis trabajos**: tarjetas fijas en HTML con los trabajos hechos (etiqueta tipo · año, título, descripción, tecnologías y botón «Ver web» opcional), el más reciente arriba. La web sirve para conseguir clientes: todo lo que aparece tiene que ser real.
