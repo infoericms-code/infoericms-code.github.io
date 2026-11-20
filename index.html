@@ -224,6 +224,67 @@
       overflow-wrap: anywhere;
     }
 
+    /* Paquetes y precios */
+    .packs {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 20px;
+    }
+    .pack {
+      padding: 18px 20px;
+      color: var(--ink);
+      box-shadow: var(--shadow);
+    }
+    .pack:nth-child(4n + 1) { background: var(--orange); }
+    .pack:nth-child(4n + 2) { background: var(--red); }
+    .pack:nth-child(4n + 3) { background: var(--green); }
+    .pack:nth-child(4n + 4) { background: var(--blue); }
+    .pack-meta {
+      margin: 0 0 2px;
+      font-size: .8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+    .pack h3 {
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 800;
+      line-height: 1.25;
+      overflow-wrap: anywhere;
+    }
+    .pack-price {
+      margin: 10px 0 0;
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1.1;
+    }
+    .pack-price small {
+      display: block;
+      margin-top: 4px;
+      font-size: .85rem;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+    .pack-desc {
+      margin: 10px 0 0;
+      font-size: .95rem;
+      overflow-wrap: anywhere;
+    }
+    .pack-list {
+      margin: 12px 0 0;
+      padding-left: 20px;
+      font-size: .95rem;
+    }
+    .pack-list li + li { margin-top: 4px; }
+    .packs-note {
+      margin: 20px 0 0;
+      color: var(--text-muted);
+      font-size: .95rem;
+    }
+
     /* Trabajos */
     .works {
       list-style: none;
@@ -527,6 +588,36 @@
           </div>
         </li>
       </ul>
+    </section>
+
+    <section aria-labelledby="paquetes">
+      <h2 id="paquetes">Paquetes y precios</h2>
+      <!-- EDITA AQUÍ: precios de partida (20 nov 2026), sin IVA. Se ajustan con las horas reales de cada web y tras la consulta con la gestoría; subirlos tras 2–3 testimonios (plan, S11) -->
+      <ul class="packs">
+        <li class="pack">
+          <p class="pack-meta">Paquete económico</p>
+          <h3>Landing rápida</h3>
+          <p class="pack-price">Desde 350 €<small>Pago único, sin IVA</small></p>
+          <p class="pack-desc">Una web de una sola página, rápida y clara, para negocios cuya información casi no cambia.</p>
+          <ul class="pack-list">
+            <li>Una página hecha a medida, pensada para el móvil</li>
+            <li>Botones de WhatsApp y teléfono, y formulario de contacto</li>
+            <li>Sin hosting de pago, y el dominio a tu nombre</li>
+          </ul>
+        </li>
+        <li class="pack">
+          <p class="pack-meta">Paquete principal</p>
+          <h3>Web que gestionas tú</h3>
+          <p class="pack-price">Desde 900 €<small>Hasta 5 páginas, sin IVA. Mantenimiento: 50 € al mes, con el hosting incluido</small></p>
+          <p class="pack-desc">Una web en WordPress en la que cambias tú los textos, las fotos y los precios desde un panel, sin tocar código.</p>
+          <ul class="pack-list">
+            <li>Formulario de contacto con protección contra el correo basura</li>
+            <li>Una guía para aprender a editarla, y el dominio a tu nombre</li>
+            <li>Mantenimiento: actualizaciones, copias de seguridad y vigilancia de la seguridad</li>
+          </ul>
+        </li>
+      </ul>
+      <p class="packs-note">El precio final depende de cuántas páginas necesites, de si los textos y las fotos los pones tú o los preparo yo, y de las funciones extra (reservas, varios idiomas, tienda). Siempre te doy un presupuesto cerrado y por escrito antes de empezar.</p>
     </section>
 
     <section aria-labelledby="trabajos">
